@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { MantineReactTable, type MRT_ColumnDef } from 'mantine-react-table';
 import { Pokemon } from '../types/types';
 import pokemonData from '../data/pokemonData.json';
-import { Badge, Box, Container } from '@mantine/core';
+import { Badge, Box, Container, Image } from '@mantine/core';
 import './pokemonTable.css';
 
 const PokemonTable = () => {
@@ -20,7 +20,7 @@ const PokemonTable = () => {
                         gap: '16px',
                       }}
                     >
-                      <img
+                      <Image
                         alt={row.original.name}
                         height={60}
                         src={row.original.imageUrl}
